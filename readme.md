@@ -1,13 +1,18 @@
 # Practica Git - Git Nuestro
 
 ### ¿Qué comando utilizaste en el paso 11? ¿Por qué?
-git reset --hard HEAD~1 
+git reset --hard HEAD~1
+
 De esta forma vuelvo al commit anterior en el Graph (git reset HEAD~1)
+
 Y además hace un git restore en el working Copy
 
 ### ¿Qué comando o comandos utilizaste en el paso 12? ¿Por qué?
 Para rehacer el commit he tenido que usar git reflog ya que el commit no era visible
-en la lista de commits. Con git reflog me muestra todos los cambios realizados.
+en la lista de commits. 
+
+Con git reflog me muestra todos los cambios realizados.
+
 Luego un git reset 9174b7c para volver al commit y un git restore git-nuestro.md para actualizar el working copy
 
 ### El merge del paso 13, ¿Causó algún conflicto? ¿Por qué?
@@ -23,6 +28,7 @@ Ahora la rama main y styled esta iguladas
 
 ### ¿Qué comando o comandos utilizaste en el paso 25?
 ➜ git log --graph
+~~~
 *   commit a99b712338c36e7850132e42b048b2e5da746df2 (HEAD -> main, styled)
 |\  Merge: 9174b7c def83a1
 | | Author: Ricardo Lopez <rlopez@next-ecommerce.com>
@@ -48,14 +54,16 @@ Ahora la rama main y styled esta iguladas
 
       first commit - add git-nuestro.md
 
+~~~
 
-### El merge del paso 26, ¿Podría ser fast forward? ¿Por qué?
+### El merge del paso 26, ¿Podría ser fast forward? ¿Por qué?
 Sí es fast forward. La he cagado y he hecho un git merge title y directamente me ha hecho el fast forward
+
 Tenia que haber ejecutado git merge --no-ff para que hubiera registrado el commit.
 He intentado hacer un git merge --abort pero como el commit no se ha registrado no puedo revertirlo
 Hago un git reflog para volver al commit del cambio de titulo de la rama title para volver a hacer el proceso
 
-### ¿Qué comando o comandos utilizaste en el paso 27?
+### ¿Qué comando o comandos utilizaste en el paso 27?
 git restore <commit>
 
 ### ¿Qué comando o comandos utilizaste en el paso 28?
