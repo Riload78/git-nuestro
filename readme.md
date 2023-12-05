@@ -26,8 +26,8 @@ La rama styled esta mas avanzada que main. Creo que se trata de un fast forward
 Si, porque los archivos son diferentes
 
 ### El merge del paso 21, ¿Causó algún conflicto? ¿Por qué?
-No, lo que hizo fue actualizar el archivo git-nuestro.md con os cambios que tenia en la rama styled. 
-Ahora la rama main y styled esta iguladas
+No, lo que hizo fue actualizar el archivo git-nuestro.md con los cambios que tenia en la rama styled. 
+Ahora la rama main y styled estan iguladas
 
 ### ¿Qué comando o comandos utilizaste en el paso 25?
 ~~~
