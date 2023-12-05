@@ -1,7 +1,10 @@
 # Practica Git - Git Nuestro
 
 ### ¿Qué comando utilizaste en el paso 11? ¿Por qué?
+
+~~~
 git reset --hard HEAD~1
+~~~
 
 De esta forma vuelvo al commit anterior en el Graph (git reset HEAD~1)
 
@@ -27,7 +30,9 @@ No, lo que hizo fue actualizar el archivo git-nuestro.md con os cambios que teni
 Ahora la rama main y styled esta iguladas
 
 ### ¿Qué comando o comandos utilizaste en el paso 25?
-➜ git log --graph
+~~~
+git log --graph
+~~~
 ~~~
 *   commit a99b712338c36e7850132e42b048b2e5da746df2 (HEAD -> main, styled)
 |\  Merge: 9174b7c def83a1
@@ -60,28 +65,43 @@ Ahora la rama main y styled esta iguladas
 Sí es fast forward. La he cagado y he hecho un git merge title y directamente me ha hecho el fast forward
 
 Tenia que haber ejecutado git merge --no-ff para que hubiera registrado el commit.
-He intentado hacer un git merge --abort pero como el commit no se ha registrado no puedo revertirlo
+He intentado hacer un git merge --abort pero como el commit no se ha registrado no puedo revertirlo.
+
 Hago un git reflog para volver al commit del cambio de titulo de la rama title para volver a hacer el proceso
 
 ### ¿Qué comando o comandos utilizaste en el paso 27?
+~~~
 git restore <commit>
+~~~
 
 ### ¿Qué comando o comandos utilizaste en el paso 28?
-git restore git-nuestro.md desde la rama main
+~~~ 
+git restore git-nuestro.md
+~~~ 
+desde la rama main
 
-### ¿Qué comando o comandos utilizaste en el paso 29?
-➜ git branch -d title desde la rama main
+### ¿Qué comando o comandos utilizaste en el paso 29?
+~~~
+git branch -d title desde la rama main
+~~~
 
 ### ¿Qué comando o comandos utilizaste en el paso 30?
-➜ git reflog para averiguar el commit en el que merge
-daf1644 (main) HEAD@{13}: commit: Change git-nuestro.md b:title
-➜ git checkout daf1644
 
+~~~
+git reflog //para averiguar el commit en el que merge (daf1644 (main) HEAD@{13}: commit: Change git-nuestro.md b:title)
+git checkout daf1644
+~~~
 ### ¿Qué comando o comandos usaste en el paso 32?
-➜ git log
-➜ git checkout edfea26d86bd802febfb57414b751f93126ceaf7
+
+~~~
+git log
+git checkout edfea26d86bd802febfb57414b751f93126ceaf7
+~~~
 
 
 ### ¿Qué comando o comandos usaste en el punto 33?
-➜ git reflog
-➜ git checkout daf1644
+
+~~~
+git reflog
+git checkout daf1644
+~~~
